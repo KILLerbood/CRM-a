@@ -1,0 +1,85 @@
+/* Magmafy CRM · Mission Control tokens.
+   Graphite surfaces, one sharp signal colour (magma amber, taken from the logo) and a stage scale that runs cold to hot.
+   Amber means «this is the thing to do»: primary actions, the next action, the now marker, focus. Everything else is neutral. */
+:root, [data-theme='dark'] {
+  --bg: #0a0b0d;
+  --card: #111316;
+  --card-2: #181b1f;
+  --card-hover: #1b1e23;
+  --sunken: #0c0d0f;
+  --line: rgba(255, 255, 255, .075);
+  --line-2: rgba(255, 255, 255, .15);
+  --ink: #eef0f2;
+  --ink-2: #aeb4bc;
+  --ink-3: #868d97;
+  --highlight: #ffb224;
+  --highlight-ink: #1a1100;
+  --highlight-ink-2: rgba(26, 17, 0, .72);
+  --accent: #ffb224;
+  --accent-text: #ffc45c;
+  --accent-soft: rgba(255, 178, 36, .14);
+  --active: #eef0f2;
+  --active-ink: #0a0b0d;
+  --good: #3dd68c; --good-soft: rgba(61, 214, 140, .13);
+  --warn: #ffb224; --warn-soft: rgba(255, 178, 36, .13);
+  --bad: #ff6b63;  --bad-soft: rgba(255, 107, 99, .13); --bad-solid: #d93f37;
+  --cnt-ink: #14100a;
+  --info: #7aa7ff; --info-soft: rgba(122, 167, 255, .13);
+  --glass: rgba(10, 11, 13, .78);
+  --scrim: rgba(3, 4, 5, .66);
+  --shadow-pop: 0 24px 64px rgba(0, 0, 0, .6), 0 0 0 1px var(--line-2);
+  --grain: .05;
+  --glow: radial-gradient(60% 50% at 50% 0%, rgba(255, 178, 36, .09), transparent 70%);
+  /* stage scale: cold (new) to hot (negotiating) to green (client) */
+  --heat-0: #6f7a8a; --heat-1: #4c8dff; --heat-2: #25b9d0; --heat-3: #7e72ff; --heat-4: #c470ff; --heat-5: #ff8a3d; --heat-6: #ffb224; --heat-7: #3dd68c;
+  --hatch: rgba(255, 255, 255, .05);
+  color-scheme: dark;
+}
+[data-theme='light'] {
+  --bg: #e9ebee;
+  --card: #ffffff;
+  --card-2: #f2f3f5;
+  --card-hover: #f7f8f9;
+  --sunken: #eef0f2;
+  --line: rgba(14, 18, 24, .09);
+  --line-2: rgba(14, 18, 24, .2);
+  --ink: #0e1217;
+  --ink-2: #444c56;
+  --ink-3: #5a626d;
+  --highlight: #ffb224;
+  --highlight-ink: #1a1100;
+  --highlight-ink-2: rgba(26, 17, 0, .75);
+  --accent: #a24b00;
+  --accent-text: #a24b00;
+  --accent-soft: rgba(255, 178, 36, .22);
+  --active: #0e1217;
+  --active-ink: #ffffff;
+  --good: #0c7a4a; --good-soft: rgba(12, 122, 74, .11);
+  --warn: #8f5200; --warn-soft: rgba(255, 178, 36, .24);
+  --bad: #c0302a;  --bad-soft: rgba(192, 48, 42, .1); --bad-solid: #c0302a;
+  --cnt-ink: #ffffff;
+  --info: #2f5fd0; --info-soft: rgba(47, 95, 208, .1);
+  --glass: rgba(233, 235, 238, .82);
+  --scrim: rgba(14, 18, 24, .4);
+  --shadow-pop: 0 18px 48px rgba(14, 18, 24, .18), 0 0 0 1px var(--line-2);
+  --grain: .035;
+  --glow: radial-gradient(60% 50% at 50% 0%, rgba(255, 178, 36, .16), transparent 70%);
+  --heat-0: #5d6877; --heat-1: #2f6fe0; --heat-2: #0d8fa5; --heat-3: #5b4fe0; --heat-4: #9a3fd6; --heat-5: #d4601a; --heat-6: #c78200; --heat-7: #0c7a4a;
+  --hatch: rgba(14, 18, 24, .06);
+  color-scheme: light;
+}
+:root {
+  --m-y: #ffb224; --m-o: #ff8a3d; --m-p: #c470ff; --m-v: #7e72ff; --m-b: #4c8dff;
+  --grad: linear-gradient(100deg, #ffb224, #ff8a3d);
+  --grad-btn: linear-gradient(100deg, #ffb224, #ff8a3d);
+  --grad-soft: linear-gradient(135deg, rgba(255, 178, 36, .2), rgba(255, 138, 61, .12));
+  --dot-1: #ff6b63; --dot-2: #ff8a3d; --dot-3: #ffb224; --dot-4: #a7d86a; --dot-5: #3dd68c;
+  --f-display: 'Space Grotesk', 'Tajawal', system-ui, sans-serif;
+  --f-display-ar: 'Tajawal', system-ui, sans-serif;
+  --f-body: 'Inter', 'Tajawal', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+  --f-num: 'Space Grotesk', 'Inter', sans-serif;
+  --r-card: 14px; --r-l: 12px; --r-m: 10px; --r-s: 8px; --r-xs: 6px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --t-fast: 120ms; --t-med: 200ms; --t-slow: 320ms;
+  --header-h: 56px; --rail-w: 64px; --pulse-h: 64px;
+}
